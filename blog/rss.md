@@ -49,7 +49,8 @@ The websites can not push content to you; you control what you see.
 
 While RSS was widely popular about 15 years ago, many users switched to commercial social media platforms.[^1]
 
-![Google Trends of RSS](/blog/rss/googleTrendsRSS.png)
+<!--![Google Trends of RSS](/blog/rss/googleTrendsRSS.png)-->
+<img src="/blog/rss/googleTrendsRSS.png" width="300">
 
 However, there's renewed interest in returning to this simpler, more user-controlled system (well, according to [What is RSS](https://ncase.me/rss/) anyway; can't really see a spike in google trends; prob just a vibe the orginal author is getting from their bubble. However, it *should* definitely make a bigger comeback. Tough, I doubt it will happen). A similar technology called Atom exists alongside RSS, and modern reader apps support both formats.[^2]
 
@@ -68,22 +69,13 @@ Youtube, Reddit and some other social media pages on the other hand offer it qui
 
 ### Look and feel
 
-So how does this RSS feed look then? Well, the following image might actually be a turnoff for some but do not worry there are more graphical RSS-readers out there.[^3] I am just using [newsboat](https://newsboat.org/), a terminal reader since I like it quite minimalistic and it comes with vim-bindings which I love.
+So how does this RSS feed look then? Well, [mine](https://clean.fynnfr.org/blog/rss/rssColage.png) might actually be a turnoff for some but do not worry there are more graphical RSS-readers out there.[^3] I am just using [newsboat](https://newsboat.org/), a terminal reader since I like it quite minimalistic and it comes with vim-bindings which I love.
 
-![How my RSS feed looks](/blog/rss/rssColage.png)
-
-I can also sort via tags and search throughout all my feeds.
-
-![Tags I use](/blog/rss/rssTags.png)
+I can also sort via [tags](https://clean.fynnfr.org/blog/rss/rssTags.png) and search throughout all my feeds.
 
 [^2]: Main source of the past section: [What is RSS](https://ncase.me/rss/)
 
-[^1]: [Google Trends of RSS](https://trends.google.com/trends/explore?date=all&q=RSS&hl=en-US)
+[^1]: [Google Trends of RSS](https://clean.fynnfr.org/blog/rss/googleTrendsRSS.png)
 
-[^3]: For example the following three RSS readers. At least one has an app so you can use it on your phone (there are prob 100+ apps tough. So don't worry if you do not like that one in particular):
-
-    ![Feeder](/blog/rss/feeder.png)
-
-    ![Feedly](/blog/rss/feedly.png)
-
-    ![Inoreader](/blog/rss/inoreader.png)
+[^3]: For example, the following three RSS readers. At least one has an app, so you can use it on your phone 
+(there are probably 100+ apps though. So don't worry if you do not like that one in particular): [Feeder](https://clean.fynnfr.org/blog/rss/feeder.png), [Feedly](https://clean.fynnfr.org/blog/rss/feedly.png), [Inoreader](https://clean.fynnfr.org/blog/rss/inoreader.png)

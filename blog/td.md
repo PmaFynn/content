@@ -40,28 +40,12 @@ functionality would be included. Unfortunately, I was wrong[^2]. What a bummer.
 
 [^2]: [Feature request](https://github.com/lfos/calcurse/issues/463) -- Further, it is to note that nowadays the development of calcurse seems to be rather stagnant if not entirely stopped.
 
-Nonetheless, I continued using calcurse for its other features though the todo view always smiled at me. After a few days, while reading through the man page of calcurse for some other reasons, I stumpled upon the files that calcurse uses to store its states. Then it hit me—why not write a simple script to insert tasks/todos into this file directly from the CLI? So that’s exactly what I did. Below is the script in my .zshrc:
-```sh
-td() {
-    local prio="0"
-    local item=""
-
-    if [ $# -eq 0 ]; then
-        calcurse
-    elif [[ "$1" == "-h" || "$1" == "--help" ]]; then
-        echo "usage:\n\ttd -[0-9]? todo goes here\n\nexample:\n\ttd -2 maintain setup.md file"
-        shift
-    elif [[ $1 =~ ^-[0-9]$ ]]; then
-        prio=${1#-}  
-        shift
-    else
-        item="$*"
-
-        echo "[$prio] $item" >> /home/fynn/.local/share/calcurse/todo
-    fi
-
-}
-```
+Nonetheless, I continued using calcurse for its other features though the todo
+view always smiled at me. After a few days, while reading through the man page
+of calcurse for some other reasons, I stumpled upon the files that calcurse
+uses to store its states. Then it hit me—why not write a simple script to
+insert tasks/todos into this file directly from the CLI? So that’s exactly what
+I did.
 
 Unfortunately, while calcurse offers a multitude of features, some key
 functionalities are missing. For example, I cannot search through my todos, nor
